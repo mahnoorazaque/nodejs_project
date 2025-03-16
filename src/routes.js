@@ -3,9 +3,9 @@ const router = express.Router();
 const taskController = require("./controllers/taskController"); // Ensure correct path
 
 router.get("/", (req, res) => {
-    res.send("Welcome to the Task API!");
+    res.send("Welcome to the Task API! It is a node js project");
   }); 
-  
+
 // Define routes
 router.get("/tasks", taskController.getTasks);
 router.post("/tasks", taskController.addTask);
